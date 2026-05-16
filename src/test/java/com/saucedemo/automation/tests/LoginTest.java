@@ -14,5 +14,18 @@ public class LoginTest extends BaseTest{
 		String title = loginPage.navigateToSauceDemo().getTitle();
 		Assert.assertTrue(title.contains("Swag Labs"));
 	}
+	
+	@Test
+	public void verifySuccessfulLogin() {
+		LoginPage loginPage = new LoginPage(driver);
+		String header = loginPage.navigateToSauceDemo()
+				                 .enterUserName("standard_user")
+				                 .enterPassword("secret_sauce")
+				                 .clickLoginButton()
+				                 .pageHeaderText();
+		
+		Assert.assertTrue(header.contains("Products"));
+				
+	}
 
 }
