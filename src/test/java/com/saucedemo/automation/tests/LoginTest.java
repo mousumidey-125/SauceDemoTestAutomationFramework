@@ -1,26 +1,31 @@
 package com.saucedemo.automation.tests;
 
 import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 import com.saucedemo.automation.base.BaseTest;
 import com.saucedemo.automation.pages.LoginPage;
 
 public class LoginTest extends BaseTest{
 	
+	LoginPage loginPage;
+	
+	@BeforeMethod
+	public void navigateLoginPage() {
+		loginPage = new LoginPage(driver);
+		loginPage.navigateToSauceDemo();
+	}
+	
 	@Test
 	public void verifyLoginPageTitle() {
-		LoginPage loginPage = new LoginPage(driver);
-		String title = loginPage.navigateToSauceDemo().getTitle();
+		String title = loginPage.getTitle();
 		Assert.assertTrue(title.contains("Swag Labs"));
 	}
 	
 	@Test
 	public void verifySuccessfulLogin() {
-		LoginPage loginPage = new LoginPage(driver);
-		String header = loginPage.navigateToSauceDemo()
-				                 .enterUserName("standard_user")
-				                 .enterPassword("secret_sauce")
+		String header = loginPage.enterUserName(configReader.getUserName())
+				                 .enterPassword(configReader.getPassword())
 				                 .clickLoginButton()
 				                 .pageHeaderText();
 		
