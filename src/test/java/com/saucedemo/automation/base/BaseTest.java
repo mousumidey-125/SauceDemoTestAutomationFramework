@@ -15,7 +15,7 @@ public class BaseTest {
 	protected WebDriver driver;
 	protected ConfigReader configReader;
 
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
 	public void setup() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
@@ -28,7 +28,7 @@ public class BaseTest {
 		}
 	}
 
-	@AfterClass
+	@AfterClass(alwaysRun = true)
 	public void teardown() {
 		if (driver != null) {
 			driver.quit();

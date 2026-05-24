@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="SauceDemo Test Suite">
-
-    <test name="Login Tests">
+<suite name="Smoke Suite">
+    <test name="Smoke Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
         <classes>
             <class name="com.saucedemo.automation.tests.LoginTest"/>
-        </classes>
-    </test>
-
-    <test name="Product Tests">
-        <classes>
             <class name="com.saucedemo.automation.tests.ProductTest"/>
-        </classes>
-    </test>
-
-    <test name="Cart Tests">
-        <classes>
             <class name="com.saucedemo.automation.tests.CartTest"/>
         </classes>
     </test>
-
 </suite>

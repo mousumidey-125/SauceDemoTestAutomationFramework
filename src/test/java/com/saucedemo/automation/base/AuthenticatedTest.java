@@ -8,7 +8,7 @@ public class AuthenticatedTest extends BaseTest {
 	
 	LoginPage loginPage;
 	
-	@BeforeClass
+	@BeforeClass(alwaysRun = true)
     public void login() {
         loginPage = new LoginPage(driver);
         loginPage.navigateToSauceDemo()
@@ -16,7 +16,7 @@ public class AuthenticatedTest extends BaseTest {
                  .enterPassword(configReader.getPassword())
                  .clickLoginButton();
         try {
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -10,19 +10,19 @@ public class LoginTest extends BaseTest{
 	
 	LoginPage loginPage;
 	
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void navigateLoginPage() {
 		loginPage = new LoginPage(driver);
 		loginPage.navigateToSauceDemo();
 	}
 	
-	@Test
+	@Test(groups = {"smoke" , "regression"})
 	public void verifyLoginPageTitle() {
 		String title = loginPage.getTitle();
 		Assert.assertTrue(title.contains("Swag Labs"));
 	}
 	
-	@Test
+	@Test(groups = {"regression"})
 	public void verifySuccessfulLogin() {
 		String header = loginPage.enterUserName(configReader.getUserName())
 				                 .enterPassword(configReader.getPassword())
