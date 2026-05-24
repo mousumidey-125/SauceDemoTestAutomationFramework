@@ -11,15 +11,15 @@ import com.saucedemo.automation.utils.ConfigReader;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
-	
+
 	protected WebDriver driver;
 	protected ConfigReader configReader;
-	
+
 	@BeforeClass
 	public void setup() {
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
-		driver.manage().window().maximize();	
+		driver.manage().window().maximize();
 		
 		try {
 			configReader = new ConfigReader();
@@ -27,10 +27,10 @@ public class BaseTest {
 			e.printStackTrace();
 		}
 	}
-	
+
 	@AfterClass
 	public void teardown() {
-		if(driver != null) {
+		if (driver != null) {
 			driver.quit();
 		}
 	}

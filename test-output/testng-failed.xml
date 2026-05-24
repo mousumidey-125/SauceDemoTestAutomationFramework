@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.saucedemo.automation.tests.LoginTest">
+      <class name="com.saucedemo.automation.tests.CartTest">
         <methods>
-          <include name="verifySuccessfulLogin"/>
+          <include name="login"/>
+          <include name="setUpPage"/>
           <include name="setup"/>
           <include name="teardown"/>
+          <include name="verifyRemoveItem"/>
         </methods>
-      </class> <!-- com.saucedemo.automation.tests.LoginTest -->
+      </class> <!-- com.saucedemo.automation.tests.CartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

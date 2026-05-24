@@ -37,5 +37,9 @@ public class ProductPage {
 	public String getCartCount() {
 	    return driver.findElement(cartCount).getText();
 	}
+	
+	public boolean isCartEmpty() {
+	    return driver.findElements(cartCount).isEmpty();
+	}
 
 }

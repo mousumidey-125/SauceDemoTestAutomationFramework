@@ -1,49 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-16T15:08:36 IST" name="Default suite" finished-at="2026-05-16T15:08:41 IST" duration-ms="4688">
+  <suite started-at="2026-05-24T13:29:27 IST" name="Default suite" finished-at="2026-05-24T13:29:34 IST" duration-ms="6798">
     <groups>
     </groups>
-    <test started-at="2026-05-16T15:08:36 IST" name="Default test" finished-at="2026-05-16T15:08:41 IST" duration-ms="4688">
-      <class name="com.saucedemo.automation.tests.ProductTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@7bd7d6d6]" started-at="2026-05-16T15:08:36 IST" name="setup" finished-at="2026-05-16T15:08:39 IST" duration-ms="3065" status="PASS">
+    <test started-at="2026-05-24T13:29:27 IST" name="Default test" finished-at="2026-05-24T13:29:34 IST" duration-ms="6798">
+      <class name="com.saucedemo.automation.tests.CartTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucedemo.automation.tests.CartTest@eadd4fb]" started-at="2026-05-24T13:29:27 IST" name="setup" finished-at="2026-05-24T13:29:29 IST" duration-ms="1808" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@7bd7d6d6]" started-at="2026-05-16T15:08:39 IST" name="login" finished-at="2026-05-16T15:08:40 IST" duration-ms="1109" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.saucedemo.automation.tests.CartTest@eadd4fb]" started-at="2026-05-24T13:29:29 IST" name="login" finished-at="2026-05-24T13:29:33 IST" duration-ms="4118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@7bd7d6d6]" started-at="2026-05-16T15:08:40 IST" name="setupPage" finished-at="2026-05-16T15:08:40 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.saucedemo.automation.tests.CartTest@eadd4fb]" started-at="2026-05-24T13:29:33 IST" name="setUpPage" finished-at="2026-05-24T13:29:33 IST" duration-ms="212" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupPage -->
-        <test-method signature="verifyAddToCart()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@7bd7d6d6]" started-at="2026-05-16T15:08:40 IST" name="verifyAddToCart" finished-at="2026-05-16T15:08:41 IST" duration-ms="143" status="PASS">
+        </test-method> <!-- setUpPage -->
+        <test-method signature="verifyCartHeader()[pri:1, instance:com.saucedemo.automation.tests.CartTest@eadd4fb]" started-at="2026-05-24T13:29:33 IST" name="verifyCartHeader" finished-at="2026-05-24T13:29:33 IST" duration-ms="67" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAddToCart -->
-        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@7bd7d6d6]" started-at="2026-05-16T15:08:41 IST" name="setupPage" finished-at="2026-05-16T15:08:41 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyCartHeader -->
+        <test-method signature="verifyCartItemName()[pri:2, instance:com.saucedemo.automation.tests.CartTest@eadd4fb]" started-at="2026-05-24T13:29:33 IST" name="verifyCartItemName" finished-at="2026-05-24T13:29:33 IST" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupPage -->
-        <test-method signature="verifyFirstProductName()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@7bd7d6d6]" started-at="2026-05-16T15:08:41 IST" name="verifyFirstProductName" finished-at="2026-05-16T15:08:41 IST" duration-ms="29" status="PASS">
+        </test-method> <!-- verifyCartItemName -->
+        <test-method signature="verifyCartItemPrice()[pri:3, instance:com.saucedemo.automation.tests.CartTest@eadd4fb]" started-at="2026-05-24T13:29:33 IST" name="verifyCartItemPrice" finished-at="2026-05-24T13:29:33 IST" duration-ms="60" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyFirstProductName -->
-        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@7bd7d6d6]" started-at="2026-05-16T15:08:41 IST" name="setupPage" finished-at="2026-05-16T15:08:41 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyCartItemPrice -->
+        <test-method signature="verifyRemoveItem()[pri:4, instance:com.saucedemo.automation.tests.CartTest@eadd4fb]" started-at="2026-05-24T13:29:33 IST" name="verifyRemoveItem" finished-at="2026-05-24T13:29:33 IST" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setupPage -->
-        <test-method signature="verifyProductCount()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@7bd7d6d6]" started-at="2026-05-16T15:08:41 IST" name="verifyProductCount" finished-at="2026-05-16T15:08:41 IST" duration-ms="20" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyProductCount -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@7bd7d6d6]" started-at="2026-05-16T15:08:41 IST" name="teardown" finished-at="2026-05-16T15:08:41 IST" duration-ms="256" status="PASS">
+        </test-method> <!-- verifyRemoveItem -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saucedemo.automation.tests.CartTest@eadd4fb]" started-at="2026-05-24T13:29:33 IST" name="teardown" finished-at="2026-05-24T13:29:34 IST" duration-ms="304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.saucedemo.automation.tests.ProductTest -->
+      </class> <!-- com.saucedemo.automation.tests.CartTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
