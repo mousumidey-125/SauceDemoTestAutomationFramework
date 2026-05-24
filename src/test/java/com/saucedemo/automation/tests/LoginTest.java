@@ -5,6 +5,7 @@ import org.testng.annotations.*;
 
 import com.saucedemo.automation.base.BaseTest;
 import com.saucedemo.automation.pages.LoginPage;
+import com.saucedemo.automation.utils.DataProviders;
 
 public class LoginTest extends BaseTest{
 	
@@ -31,6 +32,17 @@ public class LoginTest extends BaseTest{
 		
 		Assert.assertTrue(header.contains("Products"));
 				
+	}
+	
+	@Test(groups = {"regression"}, dataProvider = "loginData", dataProviderClass = DataProviders.class)
+	public void verifyLoginWithMultipleUsers(String username, String password, String expectedResult) {
+		loginPage.enterUserName(username).enterPassword(password).clickLoginButton();
+		
+		if(expectedResult.equals("success")) {
+			Assert.assertTrue(loginPage.pageHeaderText().contains("Products"));
+		}else {
+			Assert.assertTrue(loginPage.getErrorMessage().contains("Epic sadface"));
+		}
 	}
 
 }
