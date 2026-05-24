@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Smoke Suite">
-    <test name="Smoke Tests">
-        <groups>
-            <run>
-                <include name="smoke"/>
-            </run>
-        </groups>
-        <classes>
-            <class name="com.saucedemo.automation.tests.LoginTest"/>
-            <class name="com.saucedemo.automation.tests.ProductTest"/>
-            <class name="com.saucedemo.automation.tests.CartTest"/>
-        </classes>
-    </test>
+	<listeners>
+		<listener
+			class-name="com.saucedemo.automation.utils.ExtentReportManager" />
+	</listeners>
+	<test name="Smoke Tests">
+		<groups>
+			<run>
+				<include name="smoke" />
+			</run>
+		</groups>
+		<classes>
+			<class name="com.saucedemo.automation.tests.LoginTest" />
+			<class name="com.saucedemo.automation.tests.ProductTest" />
+			<class name="com.saucedemo.automation.tests.CartTest" />
+		</classes>
+	</test>
 </suite>
