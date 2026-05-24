@@ -3,8 +3,11 @@ package com.saucedemo.automation.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import com.saucedemo.automation.utils.WaitUtils;
+
 public class CartPage {
 	WebDriver driver;
+	WaitUtils waitUtils;
 	
 	private static final By cartLink = By.xpath("//a[@class='shopping_cart_link']");
 	private static final By cartHeader = By.xpath("//span[text()='Your Cart']");
@@ -15,10 +18,11 @@ public class CartPage {
 	
 	public CartPage(WebDriver driver) {
 		this.driver = driver;	
+		waitUtils = new WaitUtils(driver, 10);
 	}
 	
 	public CartPage navigateToCart() {
-		driver.findElement(cartLink).click();
+		waitUtils.waitForElementClickable(cartLink).click();
 		return this;
 	}
 	
