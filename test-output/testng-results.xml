@@ -1,385 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="5" failed="4" skipped="0">
+<testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-24T14:58:18 IST" name="SauceDemo Test Suite" finished-at="2026-05-24T14:58:39 IST" duration-ms="21052">
+  <suite started-at="2026-05-24T15:08:43 IST" name="Smoke Suite" finished-at="2026-05-24T15:09:01 IST" duration-ms="18539">
     <groups>
       <group name="regression">
-        <method signature="LoginTest.verifyLoginPageTitle()[pri:0, instance:com.saucedemo.automation.tests.LoginTest@22d7b4f8]" name="verifyLoginPageTitle" class="com.saucedemo.automation.tests.LoginTest"/>
-        <method signature="LoginTest.verifySuccessfulLogin()[pri:0, instance:com.saucedemo.automation.tests.LoginTest@22d7b4f8]" name="verifySuccessfulLogin" class="com.saucedemo.automation.tests.LoginTest"/>
-        <method signature="ProductTest.verifyAddToCart()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@5d5f10b2]" name="verifyAddToCart" class="com.saucedemo.automation.tests.ProductTest"/>
-        <method signature="ProductTest.verifyFirstProductName()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@5d5f10b2]" name="verifyFirstProductName" class="com.saucedemo.automation.tests.ProductTest"/>
-        <method signature="ProductTest.verifyProductCount()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@5d5f10b2]" name="verifyProductCount" class="com.saucedemo.automation.tests.ProductTest"/>
-        <method signature="CartTest.verifyCartHeader()[pri:1, instance:com.saucedemo.automation.tests.CartTest@37c7595]" name="verifyCartHeader" class="com.saucedemo.automation.tests.CartTest"/>
-        <method signature="CartTest.verifyCartItemName()[pri:2, instance:com.saucedemo.automation.tests.CartTest@37c7595]" name="verifyCartItemName" class="com.saucedemo.automation.tests.CartTest"/>
-        <method signature="CartTest.verifyCartItemPrice()[pri:3, instance:com.saucedemo.automation.tests.CartTest@37c7595]" name="verifyCartItemPrice" class="com.saucedemo.automation.tests.CartTest"/>
-        <method signature="CartTest.verifyRemoveItem()[pri:4, instance:com.saucedemo.automation.tests.CartTest@37c7595]" name="verifyRemoveItem" class="com.saucedemo.automation.tests.CartTest"/>
+        <method signature="LoginTest.verifyLoginPageTitle()[pri:0, instance:com.saucedemo.automation.tests.LoginTest@253d9f73]" name="verifyLoginPageTitle" class="com.saucedemo.automation.tests.LoginTest"/>
+        <method signature="ProductTest.verifyProductCount()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@146587a2]" name="verifyProductCount" class="com.saucedemo.automation.tests.ProductTest"/>
+        <method signature="CartTest.verifyCartHeader()[pri:1, instance:com.saucedemo.automation.tests.CartTest@5f0e9815]" name="verifyCartHeader" class="com.saucedemo.automation.tests.CartTest"/>
       </group> <!-- regression -->
       <group name="smoke">
-        <method signature="LoginTest.verifyLoginPageTitle()[pri:0, instance:com.saucedemo.automation.tests.LoginTest@22d7b4f8]" name="verifyLoginPageTitle" class="com.saucedemo.automation.tests.LoginTest"/>
-        <method signature="ProductTest.verifyProductCount()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@5d5f10b2]" name="verifyProductCount" class="com.saucedemo.automation.tests.ProductTest"/>
-        <method signature="CartTest.verifyCartHeader()[pri:1, instance:com.saucedemo.automation.tests.CartTest@37c7595]" name="verifyCartHeader" class="com.saucedemo.automation.tests.CartTest"/>
+        <method signature="LoginTest.verifyLoginPageTitle()[pri:0, instance:com.saucedemo.automation.tests.LoginTest@253d9f73]" name="verifyLoginPageTitle" class="com.saucedemo.automation.tests.LoginTest"/>
+        <method signature="ProductTest.verifyProductCount()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@146587a2]" name="verifyProductCount" class="com.saucedemo.automation.tests.ProductTest"/>
+        <method signature="CartTest.verifyCartHeader()[pri:1, instance:com.saucedemo.automation.tests.CartTest@5f0e9815]" name="verifyCartHeader" class="com.saucedemo.automation.tests.CartTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-05-24T14:58:18 IST" name="Login Tests" finished-at="2026-05-24T14:58:22 IST" duration-ms="3922">
-      <class name="com.saucedemo.automation.tests.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucedemo.automation.tests.LoginTest@22d7b4f8]" started-at="2026-05-24T14:58:18 IST" name="setup" finished-at="2026-05-24T14:58:20 IST" duration-ms="2018" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="navigateLoginPage()[pri:0, instance:com.saucedemo.automation.tests.LoginTest@22d7b4f8]" started-at="2026-05-24T14:58:20 IST" name="navigateLoginPage" finished-at="2026-05-24T14:58:21 IST" duration-ms="707" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateLoginPage -->
-        <test-method signature="verifyLoginPageTitle()[pri:0, instance:com.saucedemo.automation.tests.LoginTest@22d7b4f8]" started-at="2026-05-24T14:58:21 IST" name="verifyLoginPageTitle" finished-at="2026-05-24T14:58:21 IST" duration-ms="113" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginPageTitle -->
-        <test-method is-config="true" signature="navigateLoginPage()[pri:0, instance:com.saucedemo.automation.tests.LoginTest@22d7b4f8]" started-at="2026-05-24T14:58:21 IST" name="navigateLoginPage" finished-at="2026-05-24T14:58:22 IST" duration-ms="259" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateLoginPage -->
-        <test-method signature="verifySuccessfulLogin()[pri:0, instance:com.saucedemo.automation.tests.LoginTest@22d7b4f8]" started-at="2026-05-24T14:58:22 IST" name="verifySuccessfulLogin" finished-at="2026-05-24T14:58:22 IST" duration-ms="372" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifySuccessfulLogin -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saucedemo.automation.tests.LoginTest@22d7b4f8]" started-at="2026-05-24T14:58:22 IST" name="teardown" finished-at="2026-05-24T14:58:22 IST" duration-ms="313" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.saucedemo.automation.tests.LoginTest -->
-    </test> <!-- Login Tests -->
-    <test started-at="2026-05-24T14:58:23 IST" name="Product Tests" finished-at="2026-05-24T14:58:31 IST" duration-ms="8105">
+    <test started-at="2026-05-24T15:08:43 IST" name="Smoke Tests" finished-at="2026-05-24T15:09:01 IST" duration-ms="18539">
       <class name="com.saucedemo.automation.tests.ProductTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@5d5f10b2]" started-at="2026-05-24T14:58:23 IST" name="setup" finished-at="2026-05-24T14:58:24 IST" duration-ms="845" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@146587a2]" started-at="2026-05-24T15:08:46 IST" name="setup" finished-at="2026-05-24T15:08:47 IST" duration-ms="986" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@5d5f10b2]" started-at="2026-05-24T14:58:24 IST" name="login" finished-at="2026-05-24T14:58:30 IST" duration-ms="6432" status="PASS">
+        <test-method is-config="true" signature="login()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@146587a2]" started-at="2026-05-24T15:08:47 IST" name="login" finished-at="2026-05-24T15:08:53 IST" duration-ms="6165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@5d5f10b2]" started-at="2026-05-24T14:58:30 IST" name="setupPage" finished-at="2026-05-24T14:58:30 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@146587a2]" started-at="2026-05-24T15:08:53 IST" name="setupPage" finished-at="2026-05-24T15:08:53 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupPage -->
-        <test-method signature="verifyAddToCart()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@5d5f10b2]" started-at="2026-05-24T14:58:30 IST" name="verifyAddToCart" finished-at="2026-05-24T14:58:30 IST" duration-ms="152" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='shopping_cart_badge']"}
-  (Session info: chrome=148.0.7778.179)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ea4dfb2bd0cc918fe32827b6c451c488, findElement {using=xpath, value=//span[@class='shopping_cart_badge']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\mousu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61422}, goog:processID: 17784, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61422/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ea4dfb2bd0cc918fe32827b6c451c488]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='shopping_cart_badge']"}
-  (Session info: chrome=148.0.7778.179)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [ea4dfb2bd0cc918fe32827b6c451c488, findElement {using=xpath, value=//span[@class='shopping_cart_badge']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\mousu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61422}, goog:processID: 17784, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61422/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ea4dfb2bd0cc918fe32827b6c451c488
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-at com.saucedemo.automation.pages.ProductPage.getCartCount(ProductPage.java:38)
-at com.saucedemo.automation.tests.ProductTest.verifyAddToCart(ProductTest.java:33)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyAddToCart -->
-        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@5d5f10b2]" started-at="2026-05-24T14:58:31 IST" name="setupPage" finished-at="2026-05-24T14:58:31 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupPage -->
-        <test-method signature="verifyFirstProductName()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@5d5f10b2]" started-at="2026-05-24T14:58:31 IST" name="verifyFirstProductName" finished-at="2026-05-24T14:58:31 IST" duration-ms="54" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFirstProductName -->
-        <test-method is-config="true" signature="setupPage()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@5d5f10b2]" started-at="2026-05-24T14:58:31 IST" name="setupPage" finished-at="2026-05-24T14:58:31 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupPage -->
-        <test-method signature="verifyProductCount()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@5d5f10b2]" started-at="2026-05-24T14:58:31 IST" name="verifyProductCount" finished-at="2026-05-24T14:58:31 IST" duration-ms="36" status="PASS">
+        <test-method signature="verifyProductCount()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@146587a2]" started-at="2026-05-24T15:08:53 IST" name="verifyProductCount" finished-at="2026-05-24T15:08:53 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProductCount -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@5d5f10b2]" started-at="2026-05-24T14:58:31 IST" name="teardown" finished-at="2026-05-24T14:58:31 IST" duration-ms="309" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saucedemo.automation.tests.ProductTest@146587a2]" started-at="2026-05-24T15:08:53 IST" name="teardown" finished-at="2026-05-24T15:08:53 IST" duration-ms="388" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.saucedemo.automation.tests.ProductTest -->
-    </test> <!-- Product Tests -->
-    <test started-at="2026-05-24T14:58:31 IST" name="Cart Tests" finished-at="2026-05-24T14:58:39 IST" duration-ms="8359">
-      <class name="com.saucedemo.automation.tests.CartTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucedemo.automation.tests.CartTest@37c7595]" started-at="2026-05-24T14:58:31 IST" name="setup" finished-at="2026-05-24T14:58:32 IST" duration-ms="876" status="PASS">
+      <class name="com.saucedemo.automation.tests.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucedemo.automation.tests.LoginTest@253d9f73]" started-at="2026-05-24T15:08:43 IST" name="setup" finished-at="2026-05-24T15:08:45 IST" duration-ms="1973" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="login()[pri:0, instance:com.saucedemo.automation.tests.CartTest@37c7595]" started-at="2026-05-24T14:58:32 IST" name="login" finished-at="2026-05-24T14:58:38 IST" duration-ms="6212" status="PASS">
+        <test-method is-config="true" signature="navigateLoginPage()[pri:0, instance:com.saucedemo.automation.tests.LoginTest@253d9f73]" started-at="2026-05-24T15:08:45 IST" name="navigateLoginPage" finished-at="2026-05-24T15:08:45 IST" duration-ms="791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateLoginPage -->
+        <test-method signature="verifyLoginPageTitle()[pri:0, instance:com.saucedemo.automation.tests.LoginTest@253d9f73]" started-at="2026-05-24T15:08:45 IST" name="verifyLoginPageTitle" finished-at="2026-05-24T15:08:45 IST" duration-ms="41" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPageTitle -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saucedemo.automation.tests.LoginTest@253d9f73]" started-at="2026-05-24T15:08:45 IST" name="teardown" finished-at="2026-05-24T15:08:46 IST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.saucedemo.automation.tests.LoginTest -->
+      <class name="com.saucedemo.automation.tests.CartTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.saucedemo.automation.tests.CartTest@5f0e9815]" started-at="2026-05-24T15:08:53 IST" name="setup" finished-at="2026-05-24T15:08:54 IST" duration-ms="887" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="login()[pri:0, instance:com.saucedemo.automation.tests.CartTest@5f0e9815]" started-at="2026-05-24T15:08:54 IST" name="login" finished-at="2026-05-24T15:09:00 IST" duration-ms="6185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.saucedemo.automation.tests.CartTest@37c7595]" started-at="2026-05-24T14:58:38 IST" name="setUpPage" finished-at="2026-05-24T14:58:38 IST" duration-ms="209" status="PASS">
+        <test-method is-config="true" signature="setUpPage()[pri:0, instance:com.saucedemo.automation.tests.CartTest@5f0e9815]" started-at="2026-05-24T15:09:00 IST" name="setUpPage" finished-at="2026-05-24T15:09:01 IST" duration-ms="215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpPage -->
-        <test-method signature="verifyCartHeader()[pri:1, instance:com.saucedemo.automation.tests.CartTest@37c7595]" started-at="2026-05-24T14:58:38 IST" name="verifyCartHeader" finished-at="2026-05-24T14:58:38 IST" duration-ms="18" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Your Cart']"}
-  (Session info: chrome=148.0.7778.179)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5629eb28f09343bbfd7cc38a6a66d9cf, findElement {using=xpath, value=//span[text()='Your Cart']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\mousu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49318}, goog:processID: 1660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49318/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5629eb28f09343bbfd7cc38a6a66d9cf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Your Cart']"}
-  (Session info: chrome=148.0.7778.179)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5629eb28f09343bbfd7cc38a6a66d9cf, findElement {using=xpath, value=//span[text()='Your Cart']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\mousu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49318}, goog:processID: 1660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49318/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5629eb28f09343bbfd7cc38a6a66d9cf
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-at com.saucedemo.automation.pages.CartPage.getCartHeader(CartPage.java:26)
-at com.saucedemo.automation.tests.CartTest.verifyCartHeader(CartTest.java:25)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+        <test-method signature="verifyCartHeader()[pri:1, instance:com.saucedemo.automation.tests.CartTest@5f0e9815]" started-at="2026-05-24T15:09:01 IST" name="verifyCartHeader" finished-at="2026-05-24T15:09:01 IST" duration-ms="27" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCartHeader -->
-        <test-method signature="verifyCartItemName()[pri:2, instance:com.saucedemo.automation.tests.CartTest@37c7595]" started-at="2026-05-24T14:58:38 IST" name="verifyCartItemName" finished-at="2026-05-24T14:58:39 IST" duration-ms="52" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='inventory_item_name']"}
-  (Session info: chrome=148.0.7778.179)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5629eb28f09343bbfd7cc38a6a66d9cf, findElement {using=xpath, value=//div[@class='inventory_item_name']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\mousu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49318}, goog:processID: 1660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49318/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5629eb28f09343bbfd7cc38a6a66d9cf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='inventory_item_name']"}
-  (Session info: chrome=148.0.7778.179)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5629eb28f09343bbfd7cc38a6a66d9cf, findElement {using=xpath, value=//div[@class='inventory_item_name']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\mousu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49318}, goog:processID: 1660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49318/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5629eb28f09343bbfd7cc38a6a66d9cf
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-at com.saucedemo.automation.pages.CartPage.getCartItemName(CartPage.java:30)
-at com.saucedemo.automation.tests.CartTest.verifyCartItemName(CartTest.java:31)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCartItemName -->
-        <test-method signature="verifyCartItemPrice()[pri:3, instance:com.saucedemo.automation.tests.CartTest@37c7595]" started-at="2026-05-24T14:58:39 IST" name="verifyCartItemPrice" finished-at="2026-05-24T14:58:39 IST" duration-ms="85" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCartItemPrice -->
-        <test-method signature="verifyRemoveItem()[pri:4, instance:com.saucedemo.automation.tests.CartTest@37c7595]" started-at="2026-05-24T14:58:39 IST" name="verifyRemoveItem" finished-at="2026-05-24T14:58:39 IST" duration-ms="34" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Remove']"}
-  (Session info: chrome=148.0.7778.179)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5629eb28f09343bbfd7cc38a6a66d9cf, findElement {using=xpath, value=//button[text()='Remove']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\mousu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49318}, goog:processID: 1660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49318/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5629eb28f09343bbfd7cc38a6a66d9cf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[text()='Remove']"}
-  (Session info: chrome=148.0.7778.179)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [5629eb28f09343bbfd7cc38a6a66d9cf, findElement {using=xpath, value=//button[text()='Remove']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\mousu\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49318}, goog:processID: 1660, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49318/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 5629eb28f09343bbfd7cc38a6a66d9cf
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-at com.saucedemo.automation.pages.CartPage.removeItem(CartPage.java:38)
-at com.saucedemo.automation.tests.CartTest.verifyRemoveItem(CartTest.java:43)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:744)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyRemoveItem -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saucedemo.automation.tests.CartTest@37c7595]" started-at="2026-05-24T14:58:39 IST" name="teardown" finished-at="2026-05-24T14:58:39 IST" duration-ms="377" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.saucedemo.automation.tests.CartTest@5f0e9815]" started-at="2026-05-24T15:09:01 IST" name="teardown" finished-at="2026-05-24T15:09:01 IST" duration-ms="371" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.saucedemo.automation.tests.CartTest -->
-    </test> <!-- Cart Tests -->
-  </suite> <!-- SauceDemo Test Suite -->
+    </test> <!-- Smoke Tests -->
+  </suite> <!-- Smoke Suite -->
 </testng-results>

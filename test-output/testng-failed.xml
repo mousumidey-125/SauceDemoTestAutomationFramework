@@ -8,8 +8,10 @@
     <classes>
       <class name="com.saucedemo.automation.tests.ProductTest">
         <methods>
+          <include name="verifyFirstProductName"/>
           <include name="login"/>
           <include name="setupPage"/>
+          <include name="verifyProductCount"/>
           <include name="setup"/>
           <include name="teardown"/>
           <include name="verifyAddToCart"/>
@@ -28,6 +30,7 @@
           <include name="setup"/>
           <include name="teardown"/>
           <include name="verifyRemoveItem"/>
+          <include name="verifyCartItemPrice"/>
         </methods>
       </class> <!-- com.saucedemo.automation.tests.CartTest -->
     </classes>

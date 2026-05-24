@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 
 import com.saucedemo.automation.utils.ConfigReader;
@@ -17,15 +19,28 @@ public class BaseTest {
 
 	@BeforeClass(alwaysRun = true)
 	public void setup() {
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		
 		try {
 			configReader = new ConfigReader();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
+		String browser = configReader.getBrowser();
+		
+		if(browser.equalsIgnoreCase("chrome")) {
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver();
+		}
+		else if(browser.equalsIgnoreCase("edge")) {
+			WebDriverManager.edgedriver().setup();
+			driver = new EdgeDriver();
+		}
+		else if(browser.equalsIgnoreCase("firefox")) {
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
+		}
+		driver.manage().window().maximize();
+		
 	}
 
 	@AfterClass(alwaysRun = true)
