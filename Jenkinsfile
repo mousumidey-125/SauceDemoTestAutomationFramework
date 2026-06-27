@@ -6,7 +6,7 @@ pipeline {
     }
 
     parameters {
-        choice(name: 'SUITE', choices: ['smoke.xml', 'regression.xml', 'testng.xml'], description: 'Select suite to run')
+        choice(name: 'SUITE', choices: ['smoke.xml', 'regression.xml', 'testng.xml'], description: 'Select which suite to run')
     }
 
     stages {
@@ -33,6 +33,13 @@ pipeline {
         always {
             archiveArtifacts artifacts: 'reports/*.html', allowEmptyArchive: true
             testNG()
+        }
+        failure {
+            emailext (
+                subject: "Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: "Build failed. Check console output at ${env.BUILD_URL}",
+                to: "mousumidey125@gmail.com"
+            )
         }
     }
 }
