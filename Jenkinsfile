@@ -6,7 +6,7 @@ pipeline {
     }
 
     parameters {
-        choice(name: 'SUITE', choices: ['smoke.xml', 'regression.xml', 'testng.xml'], description: 'Select which suite to run')
+        choice(name: 'SUITE', choices: ['smoke.xml', 'regression.xml', 'testng.xml'], description: 'Select suite to run')
     }
 
     stages {
