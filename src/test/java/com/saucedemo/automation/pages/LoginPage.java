@@ -4,9 +4,11 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import com.saucedemo.automation.utils.WaitUtils;
 
 public class LoginPage {
 	WebDriver driver;
+	WaitUtils waitUtils;
 	
 	private static final By userName = By.xpath("//input[@id='user-name']");
 	private static final By password = By.xpath("//input[@id='password']");
@@ -18,7 +20,7 @@ public class LoginPage {
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
-
+		waitUtils = new WaitUtils(driver, 30);
 	}
 	
 	public LoginPage navigateToSauceDemo() {
@@ -50,7 +52,8 @@ public class LoginPage {
 	}
 	
 	public String pageHeaderText() {
-		return driver.findElement(pageHeader).getText();	
+		//return driver.findElement(pageHeader).getText();	
+		return waitUtils.waitForElementVisible(pageHeader).getText();	
 	}
 	
 	public String getErrorMessage() {

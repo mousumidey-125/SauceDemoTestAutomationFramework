@@ -1,5 +1,6 @@
 package com.saucedemo.automation.tests;
 
+import org.openqa.selenium.Cookie;
 import org.testng.Assert;
 import org.testng.annotations.*;
 
@@ -44,5 +45,22 @@ public class LoginTest extends BaseTest{
 			Assert.assertTrue(loginPage.getErrorMessage().contains("Epic sadface"));
 		}
 	}
+	
+	/*
+	 * @Test public void verifyLoginViaCookieInjection() {
+	 * driver.get("https://www.saucedemo.com/");
+	 * 
+	 * Cookie cookie = new Cookie("session-username", "standard_user");
+	 * driver.manage().addCookie(cookie);
+	 * 
+	 * driver.navigate().refresh(); try { Thread.sleep(3000); } catch
+	 * (InterruptedException e) { // TODO Auto-generated catch block
+	 * e.printStackTrace(); } String header = loginPage.pageHeaderText();
+	 * Assert.assertTrue(header.contains("Products"));
+	 * 
+	 * }
+	 */
+	
+	
 
 }

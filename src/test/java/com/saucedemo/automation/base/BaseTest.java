@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
@@ -28,8 +29,15 @@ public class BaseTest {
 		String browser = configReader.getBrowser();
 		
 		if(browser.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+		    WebDriverManager.chromedriver().setup();
+		    ChromeOptions options = new ChromeOptions();
+		    
+		    if (System.getenv("JENKINS_HOME") != null) {
+		        options.addArguments("--headless=new");
+		        options.addArguments("--window-size=1920,1080");
+		    }
+		    
+		    driver = new ChromeDriver(options);
 		}
 		else if(browser.equalsIgnoreCase("edge")) {
 			WebDriverManager.edgedriver().setup();
