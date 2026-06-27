@@ -35,6 +35,8 @@ public class LoginTest extends BaseTest{
 				
 	}
 	
+	//adding comment
+	
 	/*
 	 * @Test(groups = {"regression"}, dataProvider = "loginData", dataProviderClass
 	 * = DataProviders.class) public void verifyLoginWithMultipleUsers(String
