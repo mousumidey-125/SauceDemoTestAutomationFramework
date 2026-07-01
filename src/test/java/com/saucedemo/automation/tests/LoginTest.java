@@ -14,7 +14,7 @@ public class LoginTest extends BaseTest{
 	
 	@BeforeMethod(alwaysRun = true)
 	public void navigateLoginPage() {
-		loginPage = new LoginPage(driver);
+		loginPage = new LoginPage(getDriver());
 		loginPage.navigateToSauceDemo();
 	}
 	

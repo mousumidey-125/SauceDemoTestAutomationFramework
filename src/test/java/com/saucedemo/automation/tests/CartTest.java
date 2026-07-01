@@ -12,11 +12,11 @@ public class CartTest extends AuthenticatedTest{
 	ProductPage productPage;
 	CartPage cartPage;
 	
-	@BeforeClass(alwaysRun = true)
+	@BeforeMethod(alwaysRun = true)
 	public void setUpPage() {
-		 productPage = new ProductPage(driver);
+		 productPage = new ProductPage(getDriver());
 		 productPage.addToCart();	
-		 cartPage = new CartPage(driver);
+		 cartPage = new CartPage(getDriver());
 		 cartPage.navigateToCart();
 	}
 	

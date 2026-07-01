@@ -1,6 +1,6 @@
 package com.saucedemo.automation.base;
 
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
 import com.saucedemo.automation.pages.LoginPage;
 
@@ -8,9 +8,9 @@ public class AuthenticatedTest extends BaseTest {
 	
 	LoginPage loginPage;
 	
-	@BeforeClass(alwaysRun = true)
+	@BeforeMethod(alwaysRun = true)
     public void login() {
-        loginPage = new LoginPage(driver);
+        loginPage = new LoginPage(getDriver());
         loginPage.navigateToSauceDemo()
                  .enterUserName(configReader.getUserName())
                  .enterPassword(configReader.getPassword())

@@ -38,6 +38,7 @@ public class ExtentReportManager implements ITestListener {
     @Override
     public void onTestSuccess(ITestResult result) {
         test.get().pass("Test Passed");
+        test.remove();
     }
 
     @Override

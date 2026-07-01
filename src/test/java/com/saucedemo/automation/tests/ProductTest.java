@@ -11,7 +11,7 @@ public class ProductTest extends AuthenticatedTest{
 	ProductPage productPage;
 	@BeforeMethod(alwaysRun = true)
 	public void setupPage() {
-	    productPage = new ProductPage(driver);
+	    productPage = new ProductPage(getDriver());
 	}
 	
 	@Test(groups = {"smoke", "regression"})
